@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  flex: 1;
+}
+
+/* Make body take full height */
+html, body {
+  height: 100%;
+}
+
+/* Turn page into vertical layout */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content expands */
+.container,
+.hero {
+  flex: 1;
+}
+
+/* Footer stays at bottom */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+  margin-top: auto;
+}
+
+/* =========================
+   MOBILE (default)
+========================= */
+
+.container {
+  padding: 0 15px;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (min-width: 600px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    padding: 80px 30px;
+  }
+
+}
+
+
+/* =========================
+   LARGE TABLET / SMALL LAPTOP
+========================= */
+@media (min-width: 900px) {
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 1200px) {
+
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+}

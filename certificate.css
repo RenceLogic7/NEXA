@@ -1,0 +1,583 @@
+/* =====================================
+   CERTIFICATE PAGE
+===================================== */
+
+body {
+
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+
+    color: #ffffff;
+
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.certificate-container {
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    padding: 20px;
+
+}
+
+/* =====================================
+   CERTIFICATE
+===================================== */
+
+.certificate {
+
+    position: relative;
+
+    background: #ffffff;
+
+    color: #1e293b;
+
+    border: 8px solid #2563eb;
+
+    border-radius: 22px;
+
+    padding: 70px 60px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35),
+        0 0 40px rgba(37,99,235,.15);
+
+    transition: .35s ease;
+
+}
+
+.certificate:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.40),
+        0 0 55px rgba(37,99,235,.20);
+
+}
+
+/* =====================================
+   INNER DECORATIVE BORDER
+===================================== */
+
+.certificate::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 18px;
+
+    right: 18px;
+
+    bottom: 18px;
+
+    border: 2px solid #d4af37;
+
+    border-radius: 14px;
+
+    pointer-events: none;
+
+}
+
+.certificate::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 32px;
+
+    border: 1px dashed rgba(212,175,55,.45);
+
+    border-radius: 10px;
+
+    pointer-events: none;
+
+}
+
+/* =====================================
+   LOGO
+===================================== */
+
+.certificate-logo {
+
+    width: 95px;
+
+    margin-bottom: 20px;
+
+    transition: transform .3s ease;
+
+}
+
+.certificate-logo:hover {
+
+    transform: scale(1.08);
+
+}
+
+/* =====================================
+   TITLE
+===================================== */
+
+.certificate-title {
+
+    font-size: 3.2rem;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    color: #1d4ed8;
+
+    margin-bottom: 12px;
+
+    text-transform: uppercase;
+
+}
+
+.certificate-subtitle {
+
+    font-size: 1.15rem;
+
+    color: #64748b;
+
+    margin-bottom: 45px;
+
+    line-height: 1.7;
+
+}
+
+/* =====================================
+   STUDENT NAME
+===================================== */
+
+.student-name {
+
+    display: inline-block;
+
+    margin: 25px 0;
+
+    padding-bottom: 12px;
+
+    border-bottom: 3px solid #d4af37;
+
+    font-size: 2.7rem;
+
+    font-weight: 700;
+
+    color: #0f172a;
+
+    letter-spacing: 1px;
+
+}
+
+/* =====================================
+   CERTIFICATE TEXT
+===================================== */
+
+.certificate-text {
+
+    max-width: 760px;
+
+    margin: auto;
+
+    font-size: 1.15rem;
+
+    line-height: 2;
+
+    color: #475569;
+
+}
+
+/* =====================================
+   COURSE NAME
+===================================== */
+
+.course-name {
+
+    margin-top: 35px;
+
+    font-size: 2.2rem;
+
+    font-weight: 700;
+
+    color: #2563eb;
+
+}
+
+/* =====================================
+   ISSUE DATE
+===================================== */
+
+.issue-date {
+
+    margin-top: 25px;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    color: #64748b;
+
+}
+
+/* =====================================
+   SIGNATURE SECTION
+===================================== */
+
+.signature-section {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 50px;
+
+    margin-top: 70px;
+
+}
+
+.signature {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
+.signature-line {
+
+    border-top: 2px solid #475569;
+
+    margin-bottom: 12px;
+
+}
+
+.signature p {
+
+    margin: 0;
+
+    color: #475569;
+
+    font-size: .95rem;
+
+    line-height: 1.6;
+
+}
+
+/* =====================================
+   GOLD SEAL
+===================================== */
+
+.certificate-seal {
+
+    position: absolute;
+
+    right: 60px;
+
+    bottom: 65px;
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    border: 5px solid #d4af37;
+
+    background: radial-gradient(circle,
+        rgba(255,248,220,.95),
+        rgba(212,175,55,.18));
+
+    color: #b8860b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    transform: rotate(-15deg);
+
+    box-shadow:
+
+        0 8px 20px rgba(0,0,0,.15),
+
+        0 0 25px rgba(212,175,55,.35);
+
+    transition: .3s ease;
+
+}
+
+.certificate-seal:hover {
+
+    transform: rotate(-15deg) scale(1.08);
+
+}
+
+/* =====================================
+   ACTION BUTTONS
+===================================== */
+
+.certificate-actions {
+
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+.certificate-actions .btn,
+
+.certificate-actions .cta-btn {
+
+    min-width: 180px;
+
+    transition: .25s ease;
+
+}
+
+.certificate-actions .btn:hover,
+
+.certificate-actions .cta-btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+.certificate {
+
+    animation: certificateFade .5s ease both;
+
+}
+
+@keyframes certificateFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .certificate {
+
+        padding: 55px 40px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .certificate {
+
+        padding: 40px 25px;
+
+    }
+
+    .certificate-title {
+
+        font-size: 2.4rem;
+
+    }
+
+    .student-name {
+
+        font-size: 2rem;
+
+    }
+
+    .course-name {
+
+        font-size: 1.6rem;
+
+    }
+
+    .certificate-text {
+
+        font-size: 1rem;
+
+        line-height: 1.8;
+
+    }
+
+    .signature-section {
+
+        flex-direction: column;
+
+        gap: 35px;
+
+    }
+
+    .certificate-seal {
+
+        position: static;
+
+        margin: 35px auto 0;
+
+        transform: none;
+
+    }
+
+    .certificate-seal:hover {
+
+        transform: scale(1.05);
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .certificate {
+
+        padding: 30px 18px;
+
+    }
+
+    .certificate-title {
+
+        font-size: 2rem;
+
+        letter-spacing: 1px;
+
+    }
+
+    .certificate-subtitle {
+
+        font-size: 1rem;
+
+    }
+
+    .student-name {
+
+        font-size: 1.7rem;
+
+    }
+
+    .course-name {
+
+        font-size: 1.4rem;
+
+    }
+
+    .certificate-actions {
+
+        flex-direction: column;
+
+    }
+
+    .certificate-actions .btn,
+
+    .certificate-actions .cta-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+/* =====================================
+   PRINT
+===================================== */
+
+@media print {
+
+    body {
+
+        background: #ffffff !important;
+
+    }
+
+    .certificate-container {
+
+        max-width: none;
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    .certificate {
+
+        box-shadow: none;
+
+        border-width: 6px;
+
+        margin: 0;
+
+        page-break-inside: avoid;
+
+        transform: none !important;
+
+    }
+
+    .certificate::after {
+
+        display: none;
+
+    }
+
+    .certificate-actions {
+
+        display: none;
+
+    }
+
+    .certificate-seal {
+
+        box-shadow: none;
+
+    }
+
+}

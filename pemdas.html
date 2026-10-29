@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXA | PEMDAS</title>
+
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/engine.css">
+</head>
+
+<body>
+
+<header>
+  <h1>NEXA</h1>
+  <p>PEMDAS Practice</p>
+</header>
+
+<div class="container">
+
+  <!-- CONTROLS -->
+
+  <div class="row controls">
+
+    <select id="mode">
+      <option value="mcq">Student-MCQ</option>
+      <option value="step" selected>Student-Step Input</option>
+      <option value="teacher">Teacher Mode</option>
+      <option value="dashboard">Dashboard</option>
+    </select>
+
+    <select id="type">
+      <option value="pemdas">PEMDAS</option>
+      <option value="pemdas-plus">PEMDAS Plus</option>
+    </select>
+
+    <select id="difficulty">
+      <option value="simple">Simple</option>
+      <option value="medium">Medium</option>
+      <option value="complex">Complex</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <button id="generate-btn">
+      Generate Question
+    </button>
+
+  </div>
+
+  <!-- QUESTION -->
+
+  <div class="row question-row">
+
+    <input
+      type="text"
+      id="question-input"
+      readonly
+      placeholder="Generated question appears here..."
+    >
+
+    <button id="go-btn">
+      GO
+    </button>
+
+  </div>
+
+  <!-- MCQ -->
+
+  <div
+    class="row mcq-row"
+    id="mcq-row"
+    style="display:none;"
+  >
+
+    <button class="mcq-option">
+      Option A
+    </button>
+
+    <button class="mcq-option">
+      Option B
+    </button>
+
+    <button class="mcq-option">
+      Option C
+    </button>
+
+    <button class="mcq-option">
+      Option D
+    </button>
+
+  </div>
+
+  <!-- STEP -->
+
+  <div class="row step-row">
+
+    <input
+      type="text"
+      id="step-input"
+      placeholder="Enter your step..."
+    >
+
+    <button id="check-step-btn">
+      Check
+    </button>
+
+    <button id="next-step-btn">
+      Next
+    </button>
+
+  </div>
+
+  <!-- WORK PANEL -->
+
+  <div class="row">
+
+    <div
+      id="student-work"
+      class="student-work"
+    >
+
+      <h3>Your Work</h3>
+
+      <div id="student-work-steps"></div>
+
+    </div>
+
+  </div>
+
+  <!-- FEEDBACK -->
+
+  <div
+    id="feedback-panel"
+    class="feedback-panel"
+  >
+
+    Ready to begin.
+
+  </div>
+
+  <!-- ANSWER -->
+
+  <div class="row answer-row">
+
+    <input
+      type="text"
+      id="answer-input"
+      placeholder="Enter final answer..."
+    >
+
+    <button id="check-answer-btn">
+      Check Answer
+    </button>
+
+  </div>
+
+  <!-- SOLUTION -->
+
+  <div class="row solution-row">
+
+    <button id="solution-btn">
+      Show Full Solution
+    </button>
+
+  </div>
+
+  <!-- TEACHER -->
+
+  <div
+    id="teacher-panel"
+    style="display:none;"
+  >
+
+    <h2>Teacher Mode</h2>
+
+    <div id="teacher-answer"></div>
+
+  </div>
+
+  <!-- DASHBOARD -->
+
+  <div
+    id="dashboard-panel"
+    style="display:none;"
+  >
+
+    <h2>Dashboard</h2>
+
+    <p>
+      Total Questions:
+      <span id="total-questions">0</span>
+    </p>
+
+    <p>
+      Correct Answers:
+      <span id="correct-answers">0</span>
+    </p>
+
+    <p>
+      Incorrect Answers:
+      <span id="incorrect-answers">0</span>
+    </p>
+
+    <p>
+      Success Rate:
+      <span id="success-rate">0%</span>
+    </p>
+
+  </div>
+
+</div>
+
+<footer>
+  Developed by Adeoye Adewusi |
+  adeoyeadewusi2020@gmail.com
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/engines/pemdas.js"></script>
+
+</body>
+</html>

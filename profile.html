@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>NEXA | Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+     HEADER
+====================================== -->
+
+<header>
+
+    <h1>NEXA</h1>
+
+    <p>My Profile</p>
+
+    <div class="top-buttons">
+
+        <button class="btn" onclick="goTo('dashboard.html')">
+            Dashboard
+        </button>
+
+        <button class="btn" onclick="goTo('topics.html')">
+            Topics
+        </button>
+
+    </div>
+
+</header>
+
+<!-- =====================================
+     PROFILE
+====================================== -->
+
+<div class="container">
+
+    <!-- Profile Card -->
+
+    <section class="profile-card">
+
+        <div class="profile-image">
+
+            <img
+                id="profilePhoto"
+                src="assets/images/default-avatar.png"
+                alt="Profile Picture"
+            >
+
+        </div>
+
+        <h2 id="studentName">
+
+            Student Name
+
+        </h2>
+
+        <p id="studentEmail">
+
+            student@email.com
+
+        </p>
+
+        <button
+            class="btn"
+            id="uploadPhotoBtn">
+
+            Upload Photo
+
+        </button>
+
+    </section>
+
+    <!-- Personal Information -->
+
+    <section class="form-card">
+
+        <h2>
+
+            Personal Information
+
+        </h2>
+
+        <form id="profileForm">
+
+            <div class="form-group">
+
+                <label>
+
+                    Full Name
+
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Email Address
+
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Phone Number
+
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Country
+
+                </label>
+
+                <input
+                    type="text"
+                    id="country"
+                >
+
+            </div>
+
+            <button
+                class="cta-btn"
+                type="submit">
+
+                Save Changes
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Change Password -->
+
+    <section class="form-card">
+
+        <h2>
+
+            Change Password
+
+        </h2>
+
+        <form id="passwordForm">
+
+            <div class="form-group">
+
+                <label>
+
+                    Current Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="currentPassword"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    New Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="newPassword"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Confirm Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    required
+                >
+
+            </div>
+
+            <button
+                class="btn"
+                type="submit">
+
+                Update Password
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Learning Statistics -->
+
+    <section class="stats-card">
+
+        <h2>
+
+            Learning Statistics
+
+        </h2>
+
+        <div class="stats-grid">
+
+            <div class="stat-box">
+
+                <h3>
+
+                    Questions Solved
+
+                </h3>
+
+                <span id="questionsSolved">
+
+                    0
+
+                </span>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h3>
+
+                    Accuracy
+
+                </h3>
+
+                <span id="accuracy">
+
+                    0%
+
+                </span>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h3>
+
+                    Streak
+
+                </h3>
+
+                <span id="streak">
+
+                    0 Days
+
+                </span>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h3>
+
+                    Certificates
+
+                </h3>
+
+                <span id="certificates">
+
+                    0
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Subscription -->
+
+    <section class="subscription-card">
+
+        <h2>
+
+            Subscription
+
+        </h2>
+
+        <p>
+
+            Plan:
+
+            <strong id="planName">
+
+                Free
+
+            </strong>
+
+        </p>
+
+        <p>
+
+            Renewal Date:
+
+            <span id="renewalDate">
+
+                —
+
+            </span>
+
+        </p>
+
+        <button
+            class="cta-btn"
+            onclick="goTo('subscription.html')">
+
+            Manage Subscription
+
+        </button>
+
+    </section>
+
+    <!-- Account -->
+
+    <section class="danger-card">
+
+        <h2>
+
+            Account
+
+        </h2>
+
+        <button
+            class="btn"
+            id="logoutBtn">
+
+            Logout
+
+        </button>
+
+        <button
+            class="btn danger"
+            id="deleteAccountBtn">
+
+            Delete Account
+
+        </button>
+
+    </section>
+
+</div>
+
+<!-- =====================================
+     FOOTER
+====================================== -->
+
+<footer>
+
+    Developed by Adeoye Adewusi |
+    adeoyeadewusi2020@gmail.com
+
+</footer>
+
+<!-- =====================================
+     SCRIPTS
+====================================== -->
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+/* =====================================
+   DASHBOARD PAGE
+===================================== */
+
+.container {
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+}
+
+/* =====================================
+   TOP BUTTONS
+===================================== */
+
+.top-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+
+}
+
+/* =====================================
+   WELCOME CARD
+===================================== */
+
+.welcome-card {
+
+    background: #1e293b;
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+
+}
+
+.welcome-card h2 {
+
+    margin-bottom: 12px;
+
+    font-size: 2rem;
+
+}
+
+.welcome-card p {
+
+    color: #cbd5e1;
+
+}
+
+/* =====================================
+   SECTION TITLES
+===================================== */
+
+.section-title {
+
+    margin: 35px 0 20px;
+
+    color: white;
+
+    font-size: 1.6rem;
+
+}
+
+/* =====================================
+   STATISTICS GRID
+===================================== */
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+
+}
+
+.stat-card {
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: .25s;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+
+}
+
+.stat-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+.stat-card h3 {
+
+    color: white;
+
+    margin-bottom: 15px;
+
+}
+
+.stat-card span {
+
+    font-size: 2.3rem;
+
+    font-weight: bold;
+
+    color: #3b82f6;
+
+}
+
+/* =====================================
+   SUBJECT GRID
+===================================== */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+
+    gap: 25px;
+
+}
+
+.card {
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+
+    transition: .25s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+.card h3 {
+
+    color: white;
+
+    margin-bottom: 15px;
+
+}
+
+.card p {
+
+    color: #cbd5e1;
+
+    margin-bottom: 12px;
+
+}
+
+/* =====================================
+   PROGRESS BAR
+===================================== */
+
+progress {
+
+    width: 100%;
+
+    height: 16px;
+
+    margin: 12px 0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+progress::-webkit-progress-bar {
+
+    background: #475569;
+
+    border-radius: 20px;
+
+}
+
+progress::-webkit-progress-value {
+
+    background: #3b82f6;
+
+    border-radius: 20px;
+
+}
+
+progress::-moz-progress-bar {
+
+    background: #3b82f6;
+
+}
+
+.card button {
+
+    margin-top: 12px;
+
+}
+
+/* =====================================
+   SUBSCRIPTION CARD
+===================================== */
+
+.subscription-card {
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    margin-top: 35px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+
+}
+
+.subscription-card h2 {
+
+    color: white;
+
+    margin-bottom: 20px;
+
+}
+
+.subscription-card p {
+
+    color: #cbd5e1;
+
+    margin-bottom: 15px;
+
+    font-size: 1rem;
+
+}
+
+.subscription-card strong {
+
+    color: #3b82f6;
+
+    font-size: 1.1rem;
+
+}
+
+#subscriptionStatus {
+
+    color: #22c55e;
+
+    font-weight: bold;
+
+}
+
+/* =====================================
+   RECENT ACTIVITY
+===================================== */
+
+.activity-card {
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+
+}
+
+.activity-card h2 {
+
+    color: white;
+
+    margin-bottom: 20px;
+
+}
+
+#recentActivity {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+#recentActivity li {
+
+    background: #334155;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 12px;
+
+    transition: .25s;
+
+}
+
+#recentActivity li:hover {
+
+    background: #475569;
+
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.btn,
+.cta-btn {
+
+    margin-top: 12px;
+
+    transition: .25s;
+
+}
+
+.btn:hover,
+.cta-btn:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+    margin-top: 40px;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+
+        padding: 15px;
+
+    }
+
+    .welcome-card {
+
+        padding: 25px;
+
+    }
+
+    .welcome-card h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .top-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .top-buttons .btn {
+
+        width: 100%;
+
+    }
+
+    .subscription-card,
+
+    .activity-card,
+
+    .card,
+
+    .stat-card {
+
+        padding: 20px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .welcome-card h2 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .stat-card span {
+
+        font-size: 2rem;
+
+    }
+
+    .card h3 {
+
+        font-size: 1.1rem;
+
+    }
+
+}

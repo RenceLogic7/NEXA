@@ -1,0 +1,320 @@
+```html id="m4xk91"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>NEXA | Subscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/payment.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+     HEADER
+====================================== -->
+
+<header>
+
+    <h1>NEXA</h1>
+
+    <p>Subscription & Billing</p>
+
+    <div class="top-buttons">
+
+        <button class="btn" onclick="goTo('dashboard.html')">
+            Dashboard
+        </button>
+
+        <button class="btn" onclick="goTo('profile.html')">
+            Profile
+        </button>
+
+    </div>
+
+</header>
+
+<!-- =====================================
+     PAGE
+====================================== -->
+
+<div class="container">
+
+    <!-- Current Plan -->
+
+    <section class="current-plan-card">
+
+        <h2>Current Subscription</h2>
+
+        <p>
+
+            Plan:
+
+            <strong id="currentPlan">
+
+                Free
+
+            </strong>
+
+        </p>
+
+        <p>
+
+            Status:
+
+            <span id="planStatus">
+
+                Active
+
+            </span>
+
+        </p>
+
+        <p>
+
+            Next Billing Date:
+
+            <span id="renewalDate">
+
+                —
+
+            </span>
+
+        </p>
+
+    </section>
+
+    <!-- Plans -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            Choose a Plan
+
+        </h2>
+
+        <div class="grid">
+
+            <!-- Free -->
+
+            <div class="card">
+
+                <h3>Free</h3>
+
+                <h2>$0</h2>
+
+                <p>Forever</p>
+
+                <ul>
+
+                    <li>Basic practice questions</li>
+                    <li>Limited lessons</li>
+                    <li>Progress tracking</li>
+
+                </ul>
+
+                <button class="btn">
+
+                    Current Plan
+
+                </button>
+
+            </div>
+
+            <!-- Monthly -->
+
+            <div class="card">
+
+                <h3>Premium Monthly</h3>
+
+                <h2 id="monthlyPrice">
+
+                    $9.99
+
+                </h2>
+
+                <p>per month</p>
+
+                <ul>
+
+                    <li>Unlimited practice</li>
+                    <li>All lessons unlocked</li>
+                    <li>Teacher Mode</li>
+                    <li>Certificates</li>
+                    <li>Future AI Tutor</li>
+
+                </ul>
+
+                <button
+                    class="cta-btn"
+                    id="monthlySubscribe">
+
+                    Subscribe Monthly
+
+                </button>
+
+            </div>
+
+            <!-- Annual -->
+
+            <div class="card">
+
+                <h3>Premium Annual</h3>
+
+                <h2 id="annualPrice">
+
+                    $89.99
+
+                </h2>
+
+                <p>per year</p>
+
+                <ul>
+
+                    <li>Everything in Monthly</li>
+                    <li>Save over monthly billing</li>
+                    <li>Priority support</li>
+
+                </ul>
+
+                <button
+                    class="cta-btn"
+                    id="annualSubscribe">
+
+                    Subscribe Annually
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Payment Method -->
+
+    <section class="payment-card">
+
+        <h2>
+
+            Payment Method
+
+        </h2>
+
+        <p>
+
+            No payment method added.
+
+        </p>
+
+        <button
+            class="btn"
+            id="addPaymentMethod">
+
+            Add Payment Method
+
+        </button>
+
+    </section>
+
+    <!-- Billing History -->
+
+    <section class="billing-card">
+
+        <h2>
+
+            Billing History
+
+        </h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Date</th>
+                    <th>Plan</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Receipt</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="billingHistory">
+
+                <tr>
+
+                    <td colspan="5">
+
+                        No payments yet.
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- Manage -->
+
+    <section class="manage-card">
+
+        <h2>
+
+            Manage Subscription
+
+        </h2>
+
+        <button
+            class="btn"
+            id="renewSubscription">
+
+            Renew Subscription
+
+        </button>
+
+        <button
+            class="btn"
+            id="cancelSubscription">
+
+            Cancel Subscription
+
+        </button>
+
+    </section>
+
+</div>
+
+<!-- =====================================
+     FOOTER
+====================================== -->
+
+<footer>
+
+    Developed by Adeoye Adewusi |
+    adeoyeadewusi2020@gmail.com
+
+</footer>
+
+<!-- =====================================
+     SCRIPTS
+====================================== -->
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/subscription.js"></script>
+
+</body>
+</html>
+```

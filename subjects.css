@@ -1,0 +1,198 @@
+```css
+/* =====================================
+   SUBJECT PAGE
+===================================== */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* =====================================
+   SUBJECT HEADER
+===================================== */
+
+.subject-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subject-header h2 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.subject-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* =====================================
+   PROGRESS CARD
+===================================== */
+
+.progress-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.progress-card h3 {
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+progress {
+    width: 100%;
+    height: 18px;
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   TOPIC GRID
+===================================== */
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 20px;
+}
+
+/* =====================================
+   TOPIC CARD
+===================================== */
+
+.topic-card {
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+.topic-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+
+}
+
+.topic-card h3 {
+
+    color: #1e3a8a;
+
+    margin-bottom: 12px;
+
+}
+
+.topic-card p {
+
+    color: #555;
+
+    margin-bottom: 20px;
+
+}
+
+/* =====================================
+   LESSON BUTTONS
+===================================== */
+
+.topic-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+.topic-actions .btn,
+
+.topic-actions .cta-btn {
+
+    flex: 1;
+
+}
+
+/* =====================================
+   COMPLETED TOPIC
+===================================== */
+
+.completed {
+
+    border-left: 6px solid #22c55e;
+
+}
+
+.completed::after {
+
+    content: "✓ Completed";
+
+    display: block;
+
+    color: #22c55e;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+}
+
+/* =====================================
+   LOCKED TOPIC
+===================================== */
+
+.locked {
+
+    opacity: .55;
+
+    pointer-events: none;
+
+}
+
+.locked::after {
+
+    content: "🔒 Locked";
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width:768px){
+
+    .subject-header h2{
+
+        font-size:1.6rem;
+
+    }
+
+    .topic-actions{
+
+        flex-direction:column;
+
+    }
+
+}
+```

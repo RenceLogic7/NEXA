@@ -1,0 +1,614 @@
+/* =====================================
+   NEXA TOPICS
+   Part 1 — Layout
+===================================== */
+
+/* =====================================
+   PAGE CONTAINER
+===================================== */
+
+.container {
+
+    width: min(1200px, 92%);
+    margin: 40px auto 60px;
+    padding: 0 10px;
+
+}
+
+/* =====================================
+   SUBJECT TITLE
+===================================== */
+
+#subject-title {
+
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 700;
+    color: #ffffff;
+
+    margin-bottom: 40px;
+
+    letter-spacing: .5px;
+
+}
+
+/* =====================================
+   TOPICS GRID
+===================================== */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 28px;
+
+    align-items: stretch;
+
+}
+
+/* =====================================
+   TOPIC CARD
+===================================== */
+
+.card {
+
+    position: relative;
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(16px);
+
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255,255,255,.10);
+
+    border-radius: 22px;
+
+    padding: 35px 28px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    text-align: center;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.28);
+
+}
+
+/* =====================================
+   TOP ACCENT
+===================================== */
+
+.card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #3b82f6,
+        #60a5fa
+    );
+
+}
+
+/* =====================================
+   CARD ICON
+===================================== */
+
+.card::after {
+
+    content: "📘";
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: rgba(59,130,246,.18);
+
+    font-size: 2rem;
+
+}
+
+/* =====================================
+   CARD TITLE
+===================================== */
+
+.card h3 {
+
+    color: #ffffff;
+
+    font-size: 1.45rem;
+
+    font-weight: 700;
+
+    margin-bottom: 16px;
+
+    line-height: 1.35;
+
+}
+
+/* =====================================
+   CARD DESCRIPTION
+===================================== */
+
+.card p {
+
+    color: rgba(255,255,255,.82);
+
+    font-size: .98rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+    flex: 1;
+
+}
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.card .btn {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    border-radius: 12px;
+
+    padding: 14px 20px;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        opacity .25s ease;
+
+    box-shadow:
+        0 10px 20px rgba(37,99,235,.30);
+
+}
+
+/* =====================================
+   BUTTON HOVER
+===================================== */
+
+.card .btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 16px 30px rgba(37,99,235,.45);
+
+}
+
+/* =====================================
+   CARD HOVER
+===================================== */
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(96,165,250,.45);
+
+    box-shadow:
+
+        0 22px 45px rgba(0,0,0,.40),
+
+        0 0 25px rgba(59,130,246,.18);
+
+}
+
+/* =====================================
+   ACTIVE
+===================================== */
+
+.card:active {
+
+    transform: scale(.98);
+
+}
+
+/* =====================================
+   FOCUS
+===================================== */
+
+.card:focus-within {
+
+    outline: 2px solid #60a5fa;
+
+    outline-offset: 3px;
+
+}
+
+/* =====================================
+   NEXA TOPICS
+   Part 2 — Finishing
+===================================== */
+
+/* =====================================
+   LOADING STATE
+===================================== */
+
+.loading-card {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 220px;
+
+    background: rgba(255,255,255,.08);
+
+    border: 1px solid rgba(255,255,255,.10);
+
+    border-radius: 22px;
+
+    color: rgba(255,255,255,.9);
+
+    font-size: 1.1rem;
+
+    backdrop-filter: blur(16px);
+
+    animation: pulse 1.8s infinite;
+
+}
+
+/* =====================================
+   EMPTY STATE
+===================================== */
+
+.empty-card {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 60px 30px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,.08);
+
+    border: 1px dashed rgba(255,255,255,.18);
+
+    backdrop-filter: blur(16px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.22);
+
+}
+
+.empty-card h3 {
+
+    color: white;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 15px;
+
+}
+
+.empty-card p {
+
+    color: rgba(255,255,255,.75);
+
+    max-width: 500px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+}
+
+/* =====================================
+   CARD ENTRANCE ANIMATION
+===================================== */
+
+.card {
+
+    animation: fadeUp .55s ease both;
+
+}
+
+.card:nth-child(2){
+
+    animation-delay: .08s;
+
+}
+
+.card:nth-child(3){
+
+    animation-delay: .16s;
+
+}
+
+.card:nth-child(4){
+
+    animation-delay: .24s;
+
+}
+
+.card:nth-child(5){
+
+    animation-delay: .32s;
+
+}
+
+.card:nth-child(6){
+
+    animation-delay: .40s;
+
+}
+
+/* =====================================
+   BUTTON FOCUS
+===================================== */
+
+.card .btn:focus-visible {
+
+    outline: 3px solid #60a5fa;
+
+    outline-offset: 3px;
+
+}
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+.card:focus-within {
+
+    border-color: #60a5fa;
+
+    box-shadow:
+
+        0 0 0 4px rgba(96,165,250,.18),
+
+        0 18px 35px rgba(0,0,0,.35);
+
+}
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width:900px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+    #subject-title{
+
+        margin-bottom:32px;
+
+    }
+
+    .grid{
+
+        gap:22px;
+
+    }
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width:768px){
+
+    .container{
+
+        margin:25px auto 45px;
+
+    }
+
+    #subject-title{
+
+        font-size:2rem;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .card{
+
+        padding:28px 22px;
+
+    }
+
+    .card::after{
+
+        width:64px;
+
+        height:64px;
+
+        font-size:1.7rem;
+
+        margin-bottom:20px;
+
+    }
+
+    .card h3{
+
+        font-size:1.3rem;
+
+    }
+
+    .card p{
+
+        font-size:.95rem;
+
+    }
+
+}
+
+/* =====================================
+   SMALL PHONES
+===================================== */
+
+@media (max-width:480px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    #subject-title{
+
+        font-size:1.8rem;
+
+    }
+
+    .card{
+
+        border-radius:18px;
+
+        padding:24px 18px;
+
+    }
+
+    .card .btn{
+
+        padding:13px;
+
+    }
+
+}
+
+/* =====================================
+   LARGE DESKTOPS
+===================================== */
+
+@media (min-width:1400px){
+
+    .container{
+
+        max-width:1320px;
+
+    }
+
+    .grid{
+
+        gap:32px;
+
+    }
+
+}
+
+/* =====================================
+   REDUCED MOTION
+===================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%,100%{
+
+        opacity:.75;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+}

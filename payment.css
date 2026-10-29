@@ -1,0 +1,659 @@
+/* =====================================
+   SUBSCRIPTION PAGE
+===================================== */
+
+.container {
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+}
+
+/* =====================================
+   SECTION TITLES
+===================================== */
+
+.section-title {
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+    letter-spacing: .5px;
+
+}
+
+/* =====================================
+   CURRENT SUBSCRIPTION
+===================================== */
+
+.current-plan-card {
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+
+    transition: .3s ease;
+
+}
+
+.current-plan-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.current-plan-card h2 {
+
+    color: #60a5fa;
+
+    margin-bottom: 20px;
+
+    font-size: 1.7rem;
+
+}
+
+.current-plan-card p {
+
+    color: #cbd5e1;
+
+    margin: 12px 0;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+}
+
+.current-plan-card strong {
+
+    color: #ffffff;
+
+}
+
+#planStatus {
+
+    color: #22c55e;
+
+    font-weight: 700;
+
+}
+
+#renewalDate {
+
+    color: #facc15;
+
+    font-weight: 600;
+
+}
+
+/* =====================================
+   PLAN GRID
+===================================== */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 25px;
+
+}
+
+/* =====================================
+   PLAN CARD
+===================================== */
+
+.card {
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    transition: .3s ease;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.22);
+
+}
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #3b82f6;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.card h3 {
+
+    color: #60a5fa;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 15px;
+
+}
+
+.card h2 {
+
+    color: #ffffff;
+
+    font-size: 2.4rem;
+
+    margin-bottom: 10px;
+
+}
+
+.card p {
+
+    color: #94a3b8;
+
+    margin-bottom: 18px;
+
+}
+
+/* =====================================
+   PLAN FEATURES
+===================================== */
+
+.card ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 25px 0;
+
+    text-align: left;
+
+}
+
+.card ul li {
+
+    position: relative;
+
+    padding-left: 28px;
+
+    margin-bottom: 14px;
+
+    color: #e2e8f0;
+
+    line-height: 1.6;
+
+}
+
+.card ul li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #22c55e;
+
+    font-weight: bold;
+
+}
+
+/* =====================================
+   PLAN BUTTONS
+===================================== */
+
+.card .btn,
+
+.card .cta-btn {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    transition: .25s;
+
+}
+
+.card .btn:hover,
+
+.card .cta-btn:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* =====================================
+   PAYMENT METHOD
+===================================== */
+
+.payment-card,
+
+.billing-card,
+
+.manage-card {
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    margin-top: 35px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+
+    transition: .3s ease;
+
+}
+
+.payment-card:hover,
+
+.billing-card:hover,
+
+.manage-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.payment-card h2,
+
+.billing-card h2,
+
+.manage-card h2 {
+
+    color: #60a5fa;
+
+    margin-bottom: 20px;
+
+    font-size: 1.6rem;
+
+}
+
+.payment-card p,
+
+.manage-card p {
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+/* =====================================
+   BILLING HISTORY TABLE
+===================================== */
+
+.billing-card {
+
+    overflow-x: auto;
+
+}
+
+.billing-card table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 700px;
+
+}
+
+.billing-card thead {
+
+    background: #0f172a;
+
+}
+
+.billing-card th {
+
+    padding: 15px;
+
+    color: #60a5fa;
+
+    text-align: left;
+
+    font-size: .95rem;
+
+    border-bottom: 1px solid #334155;
+
+}
+
+.billing-card td {
+
+    padding: 15px;
+
+    color: #e2e8f0;
+
+    border-bottom: 1px solid #334155;
+
+}
+
+.billing-card tbody tr {
+
+    transition: .25s;
+
+}
+
+.billing-card tbody tr:hover {
+
+    background: rgba(59,130,246,.08);
+
+}
+
+/* =====================================
+   STATUS BADGES
+===================================== */
+
+.status-active,
+
+.status-success {
+
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    background: rgba(34,197,94,.15);
+
+    color: #22c55e;
+
+    font-weight: 700;
+
+    font-size: .85rem;
+
+}
+
+.status-pending {
+
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    background: rgba(250,204,21,.15);
+
+    color: #facc15;
+
+    font-weight: 700;
+
+    font-size: .85rem;
+
+}
+
+.status-cancelled,
+
+.status-failed {
+
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    background: rgba(239,68,68,.15);
+
+    color: #ef4444;
+
+    font-weight: 700;
+
+    font-size: .85rem;
+
+}
+
+/* =====================================
+   BUTTON IMPROVEMENTS
+===================================== */
+
+.payment-card .btn,
+
+.billing-card .btn,
+
+.manage-card .btn {
+
+    transition: .25s ease;
+
+}
+
+.payment-card .btn:hover,
+
+.billing-card .btn:hover,
+
+.manage-card .btn:hover {
+
+    transform: translateY(-2px);
+
+}
+
+.manage-card {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    align-items: center;
+
+}
+
+.manage-card .btn {
+
+    flex: 1;
+
+    min-width: 220px;
+
+}
+
+/* =====================================
+   FADE-IN ANIMATION
+===================================== */
+
+.current-plan-card,
+
+.card,
+
+.payment-card,
+
+.billing-card,
+
+.manage-card {
+
+    animation: fadeUp .45s ease both;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+
+        padding: 15px;
+
+    }
+
+    .grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .current-plan-card,
+
+    .payment-card,
+
+    .billing-card,
+
+    .manage-card,
+
+    .card {
+
+        padding: 24px;
+
+    }
+
+    .current-plan-card h2,
+
+    .payment-card h2,
+
+    .billing-card h2,
+
+    .manage-card h2 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .card h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .manage-card {
+
+        flex-direction: column;
+
+    }
+
+    .manage-card .btn {
+
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .container {
+
+        padding: 12px;
+
+    }
+
+    .current-plan-card,
+
+    .payment-card,
+
+    .billing-card,
+
+    .manage-card,
+
+    .card {
+
+        padding: 20px;
+
+        border-radius: 14px;
+
+    }
+
+    .section-title {
+
+        font-size: 1.5rem;
+
+    }
+
+    .card h3 {
+
+        font-size: 1.2rem;
+
+    }
+
+    .card h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+    .billing-card table {
+
+        font-size: .9rem;
+
+    }
+
+    .billing-card th,
+
+    .billing-card td {
+
+        padding: 12px;
+
+    }
+
+}

@@ -1,0 +1,244 @@
+.controls select,
+/* =====================================
+   CONTROL ROW
+===================================== */
+
+.controls {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 12px;
+
+  width: 100%;
+}
+.controls button {
+  flex: 1;
+  font-size: 1.5rem;
+  padding: 15px 24px;
+  min-height: 60px;
+  border-radius: 10px;
+}
+
+.question-row input {
+  flex: 4;
+  font-size: 1.4rem;
+  padding: 15px;
+  min-height: 60px;
+}
+
+.step-row input {
+  flex: 3;
+  font-size: 1.4rem;
+  padding: 15px;
+  min-height: 60px;
+}
+
+.answer-row input {
+  flex: 3;
+  font-size: 1.4rem;
+  padding: 15px;
+  min-height: 60px;
+}
+
+.solution-row {
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 15px 24px;
+  min-height: 60px;
+  border-radius: 10px;
+}
+
+.solution-row button {
+  width: 200px;
+  font-size: 1.5rem;
+  padding: 15px 24px;
+  min-height: 60px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+
+  select,
+  button {
+
+    font-size: 1.3rem;
+    min-height: 58px;
+  }
+
+  input {
+
+    font-size: 1.2rem;
+    min-height: 58px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  select,
+  button {
+
+    font-size: 1.4rem;
+    min-height: 62px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .controls {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .controls {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+.question-row,
+.step-row,
+.answer-row {
+
+  display: flex;
+  gap: 12px;
+
+}
+
+@media (max-width: 768px) {
+
+  .question-row,
+  .step-row,
+  .answer-row {
+
+    flex-direction: column;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  button {
+
+    width: 100%;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  select {
+
+    width: 100%;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+  }
+
+}
+
+.student-work {
+
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 2px solid #dcdcdc;
+
+  border-radius: 12px;
+
+  color: #000000;
+
+}
+
+.student-work h3 {
+
+  color: #000000;
+
+  margin-bottom: 15px;
+
+  font-size: 1.4rem;
+
+}
+
+.work-step {
+
+  background: #f5f5f5;
+
+  color: #000000;
+
+  padding: 12px;
+
+  margin-bottom: 12px;
+
+  border-left: 5px solid #4caf50;
+
+  border-radius: 8px;
+
+  font-size: 1.1rem;
+
+  line-height: 1.5;
+
+}
+
+.work-step strong {
+
+  color: #000000;
+
+}
+
+/* Force all text in work panel to be visible */
+.student-work,
+.student-work * {
+
+  color: #000000 !important;
+
+}
+
+button:disabled {
+
+  opacity: 0.5;
+
+  cursor: not-allowed;
+
+  pointer-events: none;
+
+}
+
+input:disabled {
+
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  background: #eeeeee;
+
+}

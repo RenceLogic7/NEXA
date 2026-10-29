@@ -1,0 +1,19 @@
+.lesson-container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.lesson-container h2 {
+  margin-bottom: 10px;
+}
+
+.lesson-container p {
+  margin-bottom: 20px;
+}
+
+.example {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}

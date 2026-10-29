@@ -1,0 +1,433 @@
+/* =====================================
+   LOGIN PAGE
+===================================== */
+
+.container {
+
+    max-width: 500px;
+
+    margin: 60px auto;
+
+    padding: 20px;
+
+}
+
+/* =====================================
+   LOGIN CARD
+===================================== */
+
+.login-card {
+
+    background: #1e293b;
+
+    border-radius: 16px;
+
+    padding: 40px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.35);
+
+    transition: .3s;
+
+}
+
+.login-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+.login-card h2 {
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-size: 2rem;
+
+    margin-bottom: 12px;
+
+}
+
+.login-card p {
+
+    text-align: center;
+
+    color: #cbd5e1;
+
+    margin-bottom: 30px;
+
+    line-height: 1.6;
+
+}
+
+/* =====================================
+   FORM
+===================================== */
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 22px;
+
+}
+
+.form-group label {
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    font-size: .95rem;
+
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 2px solid #334155;
+
+    border-radius: 10px;
+
+    background: #0f172a;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+
+    transition: .25s;
+
+    box-sizing: border-box;
+
+}
+
+.form-group input::placeholder {
+
+    color: #94a3b8;
+
+}
+
+.form-group input:focus {
+
+    outline: none;
+
+    border-color: #3b82f6;
+
+    box-shadow: 0 0 10px rgba(59,130,246,.35);
+
+}
+
+/* =====================================
+   PASSWORD FIELD
+===================================== */
+
+.password-wrapper {
+
+    position: relative;
+
+}
+
+.password-wrapper input {
+
+    padding-right: 50px;
+
+}
+
+.toggle-password {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 16px;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    color: #cbd5e1;
+
+    font-size: 1rem;
+
+    transition: .25s;
+
+    user-select: none;
+
+}
+
+.toggle-password:hover {
+
+    color: #3b82f6;
+
+}
+
+/* =====================================
+   LOGIN BUTTON
+===================================== */
+
+.login-card .cta-btn {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    transition: .25s;
+
+}
+
+.login-card .cta-btn:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* =====================================
+   AUTH LINKS
+===================================== */
+
+.auth-links {
+
+    margin-top: 30px;
+
+    text-align: center;
+
+}
+
+.auth-links a {
+
+    display: block;
+
+    margin: 10px 0;
+
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .25s;
+
+}
+
+.auth-links a:hover {
+
+    color: #93c5fd;
+
+    text-decoration: underline;
+
+}
+
+/* =====================================
+   ERROR MESSAGE
+===================================== */
+
+.error-message {
+
+    display: none;
+
+    background: rgba(220,38,38,.18);
+
+    border: 1px solid #dc2626;
+
+    color: #fecaca;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    animation: fadeIn .25s ease;
+
+}
+
+/* =====================================
+   SUCCESS MESSAGE
+===================================== */
+
+.success-message {
+
+    display: none;
+
+    background: rgba(34,197,94,.18);
+
+    border: 1px solid #22c55e;
+
+    color: #bbf7d0;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    animation: fadeIn .25s ease;
+
+}
+
+/* =====================================
+   LOADING STATE
+===================================== */
+
+.loading {
+
+    opacity: .65;
+
+    pointer-events: none;
+
+    filter: grayscale(.2);
+
+}
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-8px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+@keyframes slideUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.login-card {
+
+    animation: slideUp .45s ease;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        margin: 35px auto;
+
+        padding: 15px;
+
+    }
+
+    .login-card {
+
+        padding: 28px;
+
+    }
+
+    .login-card h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .login-card p {
+
+        font-size: .95rem;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .container {
+
+        margin: 20px auto;
+
+    }
+
+    .login-card {
+
+        padding: 22px;
+
+        border-radius: 12px;
+
+    }
+
+    .login-card h2 {
+
+        font-size: 1.5rem;
+
+    }
+
+    .form-group input {
+
+        padding: 13px;
+
+    }
+
+    .login-card .cta-btn {
+
+        padding: 13px;
+
+    }
+
+    .toggle-password {
+
+        right: 14px;
+
+    }
+
+}

@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #122D2F;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #1E4B4E;
+}
+
+.hero {
+  padding: 60px 20px; /* top/bottom | left/right */
+  text-align: center;
+}
+
+.hero h2 {
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 20px; /* center text nicely */
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email | NEXA</title>
+
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f5f7fb;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .card{
+            width:420px;
+            max-width:90%;
+            background:#fff;
+            border-radius:12px;
+            padding:40px;
+            box-shadow:0 10px 30px rgba(0,0,0,.12);
+            text-align:center;
+        }
+
+        h1{
+            margin-bottom:20px;
+            color:#1e3a8a;
+        }
+
+        #status{
+            font-size:18px;
+            line-height:1.6;
+        }
+
+        .success{
+            color:green;
+        }
+
+        .error{
+            color:#c62828;
+        }
+
+        .loading{
+            color:#1565c0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>Email Verification</h1>
+
+    <div id="status" class="loading">
+        Verifying your email...
+    </div>
+
+</div>
+
+<script src="assets/js/verify-email.js"></script>
+
+</body>
+</html>

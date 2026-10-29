@@ -1,0 +1,168 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>NEXA | Lesson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/lesson.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+     HEADER
+====================================== -->
+
+<header>
+
+    <h1>NEXA</h1>
+
+    <p id="lessonSubject">
+
+        Lesson
+
+    </p>
+
+    <div class="top-buttons">
+
+        <button
+            class="btn"
+            onclick="goTo('topics.html')">
+
+            Topics
+
+        </button>
+
+        <button
+            class="btn"
+            onclick="goTo('dashboard.html')">
+
+            Dashboard
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- =====================================
+     LESSON
+====================================== -->
+
+<div class="container">
+
+    <section class="lesson-header">
+
+        <h2 id="lessonTitle">
+
+            Loading Lesson...
+
+        </h2>
+
+        <p id="lessonDescription">
+
+            Please wait while your lesson loads.
+
+        </p>
+
+    </section>
+
+    <!-- Lesson Progress -->
+
+    <section class="progress-card">
+
+        <h3>
+
+            Lesson Progress
+
+        </h3>
+
+        <progress
+            id="lessonProgress"
+            value="0"
+            max="100">
+
+        </progress>
+
+        <p>
+
+            <span id="progressPercent">
+
+                0%
+
+            </span>
+            Complete
+
+        </p>
+
+    </section>
+
+    <!-- Lesson Content -->
+
+    <section
+        id="lessonContent"
+        class="lesson-content">
+
+        <!-- Dynamic lesson content goes here -->
+
+    </section>
+
+    <!-- Navigation -->
+
+    <section class="lesson-navigation">
+
+        <button
+            class="btn"
+            id="previousLesson">
+
+            ← Previous Lesson
+
+        </button>
+
+        <button
+            class="cta-btn"
+            id="startPractice">
+
+            Practice Questions
+
+        </button>
+
+        <button
+            class="btn"
+            id="nextLesson">
+
+            Next Lesson →
+
+        </button>
+
+    </section>
+
+</div>
+
+<!-- =====================================
+     FOOTER
+====================================== -->
+
+<footer>
+
+    Developed by Adeoye Adewusi |
+    adeoyeadewusi2020@gmail.com
+
+</footer>
+
+<!-- =====================================
+     SCRIPTS
+====================================== -->
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/lesson.js"></script>
+
+</body>
+</html>
+```
